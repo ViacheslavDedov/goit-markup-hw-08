@@ -1,6 +1,6 @@
 .hero {
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     top: 80px;
@@ -27,6 +27,7 @@
     }
 
     @media screen and (min-width: 1200px){
+        height: 600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../img/hero-background.jpg);
        
         @media (min-device-pixel-ratio: 2),
@@ -37,10 +38,16 @@
     }
 
     &__title {
-        @include font(900, 44px, calc(60 / 44), 0.06em, $third-color);
-        padding-top: 200px;
-        text-transform: uppercase;
+        @include font(900, 26px, calc(42 / 26), 0.06em, $third-color);
+            padding-top: 118px;
+            text-transform: uppercase;
+    
+        @media screen and (min-width: 1200px){
+           @include font(900, 44px, calc(60 / 44), 0.06em, $third-color);
+           padding-top: 200px;
+        }
     }
+        
 
     &__button {
         @include button(200px, 50px, $act-color, 0px 4px 4px $shadow-color, 4px);
