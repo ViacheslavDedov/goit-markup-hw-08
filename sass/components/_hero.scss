@@ -1,0 +1,57 @@
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../img/hero-background-mobile.jpg);
+    
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../img/hero-background-mobile@2x.jpg);
+    }
+    
+    @media screen and (min-width: 768px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../img/hero-background-tablet.jpg);
+       
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../img/hero-background-tablet@2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../img/hero-background.jpg);
+       
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../img/hero-background@2x.jpg);
+        }
+    }
+
+    &__title {
+        @include font(900, 44px, calc(60 / 44), 0.06em, $third-color);
+        padding-top: 200px;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        @include button(200px, 50px, $act-color, 0px 4px 4px $shadow-color, 4px);
+        margin-top: 30px;
+        margin-right: 0;
+        @include font(bold, 16px, calc(30 / 16), 0.06em, $third-color);
+       
+        &:hover,
+        &:focus {
+            background-color: var(--selection-color);
+            box-shadow: 0px 4px 4px var(--shadow-color);
+            border-radius: 4px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }}}

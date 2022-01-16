@@ -1,0 +1,65 @@
+.subscribe-form__input {
+    border: 1px solid $border-form;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px $shadow-color);
+    border-radius: 4px;
+    background: $backgr-color;
+    height: 50px;
+    width: 100%;
+    padding: 15px 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px){
+        display: block;
+     justify-content: center;
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px){
+        margin-right: 12px;
+        width: 358px;    
+    }
+}
+
+.subscribe-form__title {
+    text-align: center;
+    height: 16px;
+    margin-bottom: 20px;
+    @include font(bold, 14px, calc(16 / 14), 0.03em, $third-color); 
+
+    @media screen and (min-width: 1200px){
+        text-align: left;
+    }
+} 
+.subscribe-form__button {
+    @media screen and (min-width: 1200px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}}
+
+.subscribe-form__btn {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+    padding: 10px 62px 10px 29px;
+    @include button(200px, auto, $act-color, 0px 4px 4px $shadow-color, 4px);
+    @include font(bold, 16px, calc(30 / 16), 0.06em, $third-color);
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px){
+        display: inline-block;
+        margin-top: 0;
+    }
+}
+
+.subscribe-form__icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    right: 28px;
+}

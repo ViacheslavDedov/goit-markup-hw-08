@@ -1,0 +1,49 @@
+
+.connect,
+.subscribe-form {
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px){
+        padding-top: 0;
+    }
+
+    @media screen and (min-width: 1200px){
+        padding-top: 12px;
+}
+}
+.connect {
+    @media screen and (min-width: 1200px){
+        margin-right: 93px;
+    }
+    
+}
+.connect .social__link {
+    background-color: $backg-social;
+
+&:hover,
+&:focus {
+    background-color: var(--act-color);
+}}
+
+.connect .social__icon {
+    fill: var(--third-color);
+}
+
+.connect__title {
+    @include font(bold, 14px, 1.14, 0.03em, $third-color);
+    margin-bottom: 20px;
+  
+    text-align: center;
+
+    @media screen and (min-width: 1200px){
+        width: 145px;
+        height: 16px;
+    }
+    
+    
+    
+}
+
+.connect .social__list { 
+    margin-bottom: 0px;
+}
